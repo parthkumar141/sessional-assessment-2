@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hbd</title>
+    <script src="app.js"> </script>
+</head>
+<body>
+    <div class="header">
+        <div class="innerheader">
+            <div class="logocontainer">
+                <h1>MY<span>API</span> </h1>
+            </div>
+            <ul class="navigation"> 
+                <a> <li id="home">HOME</li> </a>
+                <a> <li>ABOUT</li> </a>
+                <a> <li>EMPLOYEES</li> </a>
+                <a> <li>JOIN US</li> </a>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+    <div class="text">
+        <p><h2>hello there,</h2></p>
+        <p><h2>this is a website to demonstrate how api works. there are 10 buttons, each denoting a person's data</h2></p>
+        <p><h2>click on a button to fetch data from the api.</h2></p>
+
+    </div>
+    
+
+    <div class="buttons">
+       
+        <button class ="btn btn1" onclick="getData(1)">person 1</button>
+        <button class ="btn btn2" onclick="getData(2)">person 2</button>
+        
+        <button class ="btn btn3" onclick="getData(3)">person 3</button>
+        <button class ="btn btn4" onclick="getData(4)">person 4</button>
+        
+        <br>
+        
+        <button class ="btn btn3" onclick="getData(5)">person 5</button>
+        <button class ="btn btn4" onclick="getData(6)">person 6</button>
+
+        <button class ="btn btn1" onclick="getData(7)">person 7</button>
+        <button class ="btn btn2" onclick="getData(8)">person 8</button>
+        <br>
+
+        <button class ="btn btn1" onclick="getData(9)">person 9</button>
+        <button class ="btn btn2" onclick="getData(10)">person 10</button>
+
+
+
+
+
+
+        
+        
+        
+    </div>
+
+    <div class="para">
+        <div class="close">X</div>
+        <div class="table">
+
+
+            <table>
+                <tr><td>Name:</td><td><p id="name"></p></td></tr>
+                <tr><td>email:</td><td><p id="email"></p></td></tr>
+                <tr><td>address</td><td><p id="address"></p></td></tr>
+                <tr><td>phone</td><td><p id="phone"></p></td></tr>
+                <tr><td>website</td><td><p id="website"></p></td></tr>
+                <tr><td>company</td><td><p id="company"></p></td></tr>
+              </table>
+              
+             <!-- <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><p id="name"></p></td>
+                </tr>
+                <tr>
+                    <td>email
+                        <p id="email"></p>
+                    </td>
+                </tr>
+             </table>
+              Name: <p id="name"></p>
+             Email: <p id="email"></p> -->
+             <!-- address: <p id="address"> 
+                suite: <p id="suite"></p>
+             </p>
+               
+             phone: <p id="phone"></p>
+             website: <p id="website"></p>
+             company: <p id="company"></p> -->
+
+            
+
+        </div>
+    </div>
+   
+
+
+</body>
+<script>
+    document.querySelector('.close').addEventListener("click", function () {
+    document.querySelector('.para').style.display = "none";
+    document.querySelector('.buttons').style.display = "block";
+
+});
+
+</script>
+</html>
